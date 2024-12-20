@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import mongoose from 'mongoose'
 import "dotenv/config"
+import userRoutes from "./routes/UserRoutes.js"
 await mongoose.connect(`${process.env.MONGODB_URI}/bg-removal`).then(()=>{
     console.log("mongodb is connected..")
 })
